@@ -1,0 +1,9 @@
+services:
+  tor-browser:
+    build: .
+    ports:
+      - "9418:80"  # Ändere diesen Wert, um den externen Port zu konfigurieren
+    environment:
+      - USERNAME=admin
+      - PASSWORD=password
+
